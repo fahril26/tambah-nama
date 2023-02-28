@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Data Diri</h1>
+
+      <button type="button">Tambah Data</button>
+
+      <table>
+        <thead>
+          <th>Nama</th>
+          <th>Umur</th>
+          <th>Jenis Kelamin</th>
+        </thead>
+
+        <tbody>
+          <td>Fahril</td>
+          <td>23</td>
+          <td>Laki-Laki</td>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal-container ">
+      <div class="modal">
+        <h1>Input Data</h1>
+
+        <form >
+          <div class="items">
+            <label for="nama">Nama</label>
+            <input type="text" class="text nama" id="nama" >
+          </div>
+          <div class="items">
+            <label for="umur">Umur</label>
+            <input type="number" class="text umur"  id="umur" >
+          </div>
+          <div class="items">
+            <label for="gender">Jenis Kelamin</label>
+            <div class="radio">
+              <input type="radio" name="gender" id="male" value="Laki-Laki">
+              <label for="male">Laki-Laki</label>
+              
+              <input type="radio" name="gender" id="female" value="Perempuan">
+              <label for="female">Perempuan</label>
+            </div>
+          </div>
+
+          <div class="buttons">
+            <button type="button">Cancel</button>
+            <button type="button">Submit</button>
+          </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
